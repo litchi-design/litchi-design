@@ -1,0 +1,39 @@
+{
+  "name": "rabbit-design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "pnpm -C test dev",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@rabbit-design/components": "workspace:^1.0.0",
+    "@rabbit-design/theme-chalk": "workspace:^1.0.0",
+    "@rabbit-design/utils": "workspace:^1.0.0",
+    "@vicons/ionicons5": "^0.12.0",
+    "sass": "^1.55.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "@types/node": "^18.8.4",
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
+    "@vue/eslint-config-typescript": "^11.0.2",
+    "eslint": "^8.25.0",
+    "eslint-plugin-vue": "^9.6.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "mrm": "^4.1.6",
+    "typescript": "^4.8.4",
+    "vue": "^3.2.40"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
+  }
+}

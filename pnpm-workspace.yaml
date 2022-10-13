@@ -1,0 +1,4 @@
+packages:
+  - test # 组件测试的代码
+  - docs # 组件说明文档
+  - packages/* # packages 目录下都是组件包
