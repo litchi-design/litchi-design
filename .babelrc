@@ -1,0 +1,18 @@
+// .babelrc
+{
+  "presets": ["@babel/preset-env"],
+  // 注意：借助babel-plugin-import引入
+  "plugins": [
+    [
+      "import",
+      {
+        // 组件库名称
+        "libraryName": "litchi-design",
+        // 组件位置
+        "libraryDirectory": "packages/components",
+        // 组件样式位置
+        "style": "style/index.css"
+      }
+    ]
+  ]
+}
