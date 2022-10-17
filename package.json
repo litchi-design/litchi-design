@@ -31,9 +31,9 @@
   "license": "ISC",
   "typings": "./lib/index.d.ts",
   "dependencies": {
-    "@litchi-design/components": "workspace:^2.1.0",
-    "@litchi-design/theme-chalk": "workspace:^2.1.0",
-    "@litchi-design/utils": "workspace:^2.1.0",
+    "@litchi-design/components": "workspace:^3.0.0",
+    "@litchi-design/theme-chalk": "workspace:^3.0.0",
+    "@litchi-design/utils": "workspace:^3.0.0",
     "@vicons/ionicons5": "^0.12.0",
     "@vitejs/plugin-vue-jsx": "^2.0.1",
     "babel-plugin-import": "^1.13.5",
