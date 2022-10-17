@@ -2,9 +2,12 @@
 # 整个工作流的名称
 name: Release
 
-# 监听 main 分支的 push 事件(有更新时)
+# 监听 dev 分支的 push 事件(有更新时)
 on:
   push:
+    branches:
+      - dev
+  pull_request:
     branches:
       - main
 
@@ -38,7 +41,7 @@ jobs:
       # https://pnpm.io/zh/cli/install#--frozen-lockfile
       # 下载依赖
       - name: Install Dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm ci
 
       # https://github.com/changesets/action
       # 自动创建发布 PR 或 发布 npm
