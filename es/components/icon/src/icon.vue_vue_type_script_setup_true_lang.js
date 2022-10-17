@@ -2,15 +2,15 @@ import { defineComponent, computed, openBlock, createElementBlock, normalizeClas
 import { createNamespace } from "../../../utils/create.js";
 import { iconProps } from "./icon2.js";
 const _hoisted_1 = /* @__PURE__ */ createElementVNode("button", null, "vv", -1);
+const __default__ = defineComponent({
+  name: "LIcon"
+});
 const _sfc_main = /* @__PURE__ */ defineComponent({
-  __name: "icon",
+  ...__default__,
   props: iconProps,
   setup(__props) {
     const props = __props;
     const bem = createNamespace("icon");
-    defineOptions({
-      name: "LIcon"
-    });
     const style = computed(() => {
       if (!props.color && !props.size) {
         return {};

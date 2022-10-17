@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
+import DefineOptions from 'unplugin-vue-define-options/vite';
 import dts from 'vite-plugin-dts';
 export default defineConfig({
   build: {
@@ -12,7 +13,7 @@ export default defineConfig({
     //cssCodeSplit: true,
     rollupOptions: {
       //忽略打包vue文件
-      external: ['vue', /\.less/, '@litchi-design/utils'],
+      external: ['vue', /\.less/, '@litchi-design/utils', 'play'],
       input: ['packages/index.ts'],
       output: [
         {
@@ -37,12 +38,13 @@ export default defineConfig({
       ],
     },
     lib: {
-      entry: './index.ts',
-      formats: ['es', 'cjs'],
+      entry: './index.ts', // 可选
+      formats: ['es', 'cjs'], // 不能省略
     },
   },
   plugins: [
     vue(),
+    DefineOptions(),
     dts({
       //指定使用的tsconfig.json为我们整个项目根目录下掉,如果不配置,你也可以在components下新建tsconfig.json
       tsConfigFilePath: './tsconfig.json',

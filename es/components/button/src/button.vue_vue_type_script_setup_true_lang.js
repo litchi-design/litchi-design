@@ -2,15 +2,15 @@ import { defineComponent, computed, openBlock, createElementBlock, normalizeClas
 import { createNamespace } from "../../../utils/create.js";
 import { buttonProps } from "./button2.js";
 const _hoisted_1 = /* @__PURE__ */ createElementVNode("button", null, "hoihg8y8", -1);
+const __default__ = defineComponent({
+  name: "LButton"
+});
 const _sfc_main = /* @__PURE__ */ defineComponent({
-  __name: "button",
+  ...__default__,
   props: buttonProps,
   setup(__props) {
     const props = __props;
     const bem = createNamespace("button");
-    defineOptions({
-      name: "LButton"
-    });
     const style = computed(() => {
       if (!props.color && !props.size) {
         return {};
