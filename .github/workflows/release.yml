@@ -41,7 +41,7 @@ jobs:
       # https://pnpm.io/zh/cli/install#--frozen-lockfile
       # 下载依赖
       - name: Install Dependencies
-        run: pnpm ci
+        run: pnpm install
 
       # https://github.com/changesets/action
       # 自动创建发布 PR 或 发布 npm
