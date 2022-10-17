@@ -7,6 +7,7 @@
       <button>删除</button>
       <button>新增</button>
       <button>修改</button>
+      <button>查询</button>
     </i>
   </div>
 </template>
