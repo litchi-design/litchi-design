@@ -1,6 +1,12 @@
 {
   "$schema": "https://unpkg.com/@changesets/config@2.2.0/schema.json",
-  "changelog": "@changesets/cli/changelog",
+  "changelog": [
+    "@changesets/changelog-github",
+    {
+      // 这个是 github 上的包路径
+      "repo": "coder-fang/litchi-design"
+    }
+  ],
   "commit": false,
   "fixed": [],
   "linked": [["@litchi-design/*"]],
