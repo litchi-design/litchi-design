@@ -1,6 +1,6 @@
 # Icon 图标
 
-z-ui 推荐使用 xicons 作为图标库。
+litchi-design 推荐使用 xicons 作为图标库。
 
 $ pnpm install @vicons/ionicons5
 
@@ -14,31 +14,25 @@ const handleClick = () =>{ alert(1)}
 </script>
 
 <ZIcon color="#B1B2FF" size="40" @click="handleClick">
-<AccessibilityOutline/>
 </ZIcon>
 
 <ZIcon color="#AAC4FF" size="40">
-  <AccessibilityOutline/>
 </ZIcon>
 <ZIcon color="#D2DAFF" size="40">
-  <AccessibilityOutline/>
 </ZIcon>
 <div>
 
 <ZIcon color="#EBC7E8" size="60">
-  <ArrowRedoOutline/>
 </ZIcon>
 
 <ZIcon color="#645CAA" size="60">
-  <ArrowRedoOutline/>
 </ZIcon>
 
 <ZIcon color="#A084CA" size="60">
-  <ArrowRedoOutline/>
 </ZIcon>
 </div>
 
-<script setup lang="ts">
+<script lang="ts">
 import { CashOutline } from '@vicons/ionicons5';
 </script>
 <template>
