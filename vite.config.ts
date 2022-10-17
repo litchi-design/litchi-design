@@ -35,11 +35,24 @@ export default defineConfig({
           dir: 'lib',
           preserveModulesRoot: 'src',
         },
+        {
+          format: 'umd',
+          entryFileNames: '[name].js',
+          //让打包目录和我们目录对应
+          preserveModules: false,
+          //配置打包根目录
+          dir: 'umd',
+          preserveModulesRoot: 'src',
+          globals: {
+            vue: 'Vue',
+          },
+        },
       ],
     },
     lib: {
+      name: 'libs',
       entry: './index.ts', // 可选
-      formats: ['es', 'cjs'], // 不能省略
+      formats: ['es', 'cjs', 'umd'], // 不能省略
     },
   },
   plugins: [

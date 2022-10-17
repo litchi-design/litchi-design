@@ -5,4 +5,4 @@ export const buttonGroupProps = {
   color: String,
 } as const;
 
-export type ButtonProps = ExtractPropTypes<typeof buttonGroupProps>;
+export type ButtonGroupProps = ExtractPropTypes<typeof buttonGroupProps>;

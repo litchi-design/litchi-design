@@ -12,7 +12,8 @@
     "docs:dev": "pnpm -C docs dev",
     "build": "vite build",
     "changeset": "changeset",
-    "version-packages": "changeset version"
+    "version-packages": "changeset version",
+    "release": "pnpm --stream build && changeset publish"
   },
   "keywords": [
     "litchi-design",
@@ -23,7 +24,8 @@
   },
   "files": [
     "es",
-    "lib"
+    "lib",
+    "umd"
   ],
   "author": "杉菜酱子",
   "license": "ISC",
