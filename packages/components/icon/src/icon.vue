@@ -11,9 +11,9 @@ import { createNamespace } from '../../../utils/create';
 import { iconProps } from './icon';
 const bem = createNamespace('icon');
 
-defineOptions({
-  name: 'LIcon',
-});
+// defineOptions({
+//   name: 'LIcon',
+// });
 
 const props = defineProps(iconProps);
 
@@ -25,5 +25,12 @@ const style = computed<CSSProperties>(() => {
     ...(props.size ? { 'font-size': props.size + 'px' } : {}),
     ...(props.color ? { color: props.color } : {}),
   };
+});
+</script>
+<script lang="ts">
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+  name: 'LDIcon',
 });
 </script>

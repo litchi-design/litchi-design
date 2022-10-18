@@ -1,12 +1,7 @@
-<script setup lang="ts">
-import { AccessibilityOutline } from '@vicons/ionicons5';
-import { LICon } from 'litchi-design';
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <div>
-    <button>
-      <LICon>hhik</LICon>
-    </button>
-  </div>
+  <Ld-button />
 </template>
+
+<style></style>

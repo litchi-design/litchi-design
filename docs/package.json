@@ -9,5 +9,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "element-plus": "^2.2.18",
+    "litchi-design": "workspace:^1.0.0"
+  }
 }
