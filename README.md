@@ -18,8 +18,8 @@ Vue3.2 + TypeScript + Vite2 + pnpm + Monorepo + Eslint + karma + Mocha + chai + 
 
 在 Litchi Design 的根文件夹中运行 pnpm install。
 
-在本地文档站点上查看您的更改，您需要进入 packages/components 并运行 pnpm dev。
+在本地文档站点上查看您的更改，您需要进入 /docs 并运行 pnpm dev。
 
 # 联系方式
 
-在 issues 上联系 我 https://github.com/litchi-design/litchi-design/issues，并留下可用的联系方式。
+在 issues 上联系 我 https://github.com/litchi-design/litchi-design/issues， 并留下可用的联系方式。
