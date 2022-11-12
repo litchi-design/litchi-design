@@ -2,7 +2,7 @@
   "name": "@litchi-design/utils",
   "version": "3.0.0",
   "description": "",
-  "main": "index.ts",
+  "main": "/lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp"

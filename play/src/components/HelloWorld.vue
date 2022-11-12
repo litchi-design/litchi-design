@@ -1,22 +1,12 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { createNamespace } from '@litchi-design/utils/create';
 
 defineProps<{ msg: string }>();
 
 const count = ref(0);
-const bem = createNamespace('icon');
-
-console.log(bem.b());
-console.log(bem.e('wrapper'));
-console.log(bem.m('disabled'));
-console.log(bem.is('checked', true));
-console.log(bem.bem('box', 'element', 'disabled'));
 </script>
 
 <template>
-  <h1>{{ msg }} + “测试”</h1>
-
   <div class="card">
     <button type="button" @click="count++">count is {{ count }}</button>
     <p>

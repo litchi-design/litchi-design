@@ -5,6 +5,7 @@ module.exports = {
         ['link', { rel: 'icon', href: '/favicon.ico' }]
     ],
     themeConfig: {
+        logo: '/logo.png',
         lastUpdated: '最后更新时间',
         docsDir: 'docs',
         editLinks: true,

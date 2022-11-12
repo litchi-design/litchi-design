@@ -1,11 +1,11 @@
 // packages / index.ts
 
 // 导入单个组件
-import LIcon from './components/icon';
-import LButton from './components/button';
+import LdIcon from './components/icon';
+import LdButton from './components/button';
 
 // 以数组的结构保存组件，便于遍历
-const components = [LIcon, LButton];
+const components = [LdIcon, LdButton];
 
 // 定义 install 方法
 const install: any = function (Vue: any) {

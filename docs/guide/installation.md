@@ -6,7 +6,7 @@
 
 ## 版本
 
-Rabbit Design 目前还在开发迭代中
+Litchi Design 目前还在开发迭代中
 
 ## 使用包管理器
 

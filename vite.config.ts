@@ -1,7 +1,8 @@
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
-import DefineOptions from 'unplugin-vue-define-options/vite';
 import dts from 'vite-plugin-dts';
+import vueSetupExtend from 'vite-plugin-vue-setup-extend';
+const { resolve } = require('path');
 export default defineConfig({
   build: {
     target: 'modules',
@@ -10,11 +11,12 @@ export default defineConfig({
     //压缩
     minify: false,
     //css分离
-    //cssCodeSplit: true,
+    cssCodeSplit: true,
+    // rollup打包配置
     rollupOptions: {
-      //忽略打包vue文件
+      // 确保外部化处理那些你不想打包进库的依赖
       external: ['vue', /\.less/, '@litchi-design/utils', 'play'],
-      input: ['packages/index.ts'],
+      input: ['src/packages/index.ts'],
       output: [
         {
           format: 'es',
@@ -24,7 +26,7 @@ export default defineConfig({
           preserveModules: true,
           //配置打包根目录
           dir: 'es',
-          preserveModulesRoot: 'src',
+          preserveModulesRoot: 'src/packages',
         },
         {
           format: 'cjs',
@@ -33,7 +35,7 @@ export default defineConfig({
           preserveModules: true,
           //配置打包根目录
           dir: 'lib',
-          preserveModulesRoot: 'src',
+          preserveModulesRoot: 'src/packages',
         },
         {
           format: 'umd',
@@ -42,22 +44,30 @@ export default defineConfig({
           preserveModules: false,
           //配置打包根目录
           dir: 'umd',
-          preserveModulesRoot: 'src',
+          preserveModulesRoot: 'src/packages',
           globals: {
             vue: 'Vue',
           },
         },
       ],
     },
+    // 库编译模式配置
     lib: {
       name: 'libs',
-      entry: './index.ts', // 可选
+      entry: resolve(__dirname, 'packages/index.ts'), // 指定组件编译入口文件
       formats: ['es', 'cjs', 'umd'], // 不能省略
     },
   },
   plugins: [
-    vue(),
-    DefineOptions(),
+    vue({
+      template: {
+        // 支持原生自定义元素
+        compilerOptions: {
+          isCustomElement: (tag) => tag.startsWith('ld-'),
+        },
+      },
+    }),
+    vueSetupExtend(),
     dts({
       //指定使用的tsconfig.json为我们整个项目根目录下掉,如果不配置,你也可以在components下新建tsconfig.json
       tsConfigFilePath: './tsconfig.json',

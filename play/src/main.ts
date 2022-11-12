@@ -1,6 +1,9 @@
 import { createApp } from 'vue';
-import '@litchi-design/theme-chalk/src/index.scss';
+import './style.css';
 import App from './App.vue';
+import LdButton from '@litchi-design/components/button';
 
 const app = createApp(App);
-app.mount('#app');
+console.log(LdButton);
+
+app.use(LdButton).mount('#app');
