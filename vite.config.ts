@@ -8,7 +8,7 @@ export default defineConfig({
     target: 'modules',
     // 打包文件目录
     outDir: 'es',
-    //压缩
+    // 压缩
     minify: false,
     //css分离
     cssCodeSplit: true,
