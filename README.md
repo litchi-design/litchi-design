@@ -12,7 +12,7 @@ Developing
 
 ## Contribution
 
-See [Contributing Guide](https://github.com/litchi-design/litchi-design/.github/CONTRIBUTING.md).
+See [Contributing Guide](https://github.com/litchi-design/litchi-design/blob/main/.github/CONTRIBUTING.md).
 
 ## Communication
 
