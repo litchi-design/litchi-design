@@ -2,9 +2,9 @@
 layout: home
 
 hero:
-  name: Litchi Design 组件库
-  text: 基于 Vue 3 的组件库.
-  tagline: 掌握 vue3 组件编写
+  name: Litchi Design
+  text: 基于 Vue 3的组件库.
+  tagline: 轻量、可靠、具有 Material Design 风格的移动端 UI 组件库
   image: /logo.png
   actions:
     - theme: brand

@@ -16,7 +16,7 @@ export default defineConfig({
     rollupOptions: {
       // 确保外部化处理那些你不想打包进库的依赖
       external: ['vue', /\.less/, '@litchi-design/utils', 'play'],
-      input: ['packages/index.ts'],
+      input: ['src/packages/index.ts'],
       output: [
         {
           format: 'es',
@@ -26,7 +26,7 @@ export default defineConfig({
           preserveModules: true,
           //配置打包根目录
           dir: 'es',
-          preserveModulesRoot: 'src',
+          preserveModulesRoot: 'src/packages',
         },
         {
           format: 'cjs',
@@ -35,7 +35,7 @@ export default defineConfig({
           preserveModules: true,
           //配置打包根目录
           dir: 'lib',
-          preserveModulesRoot: 'src',
+          preserveModulesRoot: 'src/packages',
         },
         {
           format: 'umd',
@@ -44,7 +44,7 @@ export default defineConfig({
           preserveModules: false,
           //配置打包根目录
           dir: 'umd',
-          preserveModulesRoot: 'src',
+          preserveModulesRoot: 'src/packages',
           globals: {
             vue: 'Vue',
           },
