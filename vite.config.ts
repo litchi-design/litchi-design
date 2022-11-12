@@ -6,7 +6,7 @@ const { resolve } = require('path');
 export default defineConfig({
   build: {
     target: 'modules',
-    //打包文件目录
+    // 打包文件目录
     outDir: 'es',
     //压缩
     minify: false,
