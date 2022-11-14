@@ -16,16 +16,15 @@ npm i litchi-design -S
 yarn add litchi-design
 
 # pnpm
-pnpm add litchi-design
+pnpm add litchi-design 
 ```
 
 ```js
 import App from './App.vue';
-import Varlet from '@litchi-design/ui';
+import LitchiDesign from 'litchi-design';
 import { createApp } from 'vue';
-import '@varlet/ui/es/style.js';
 
-createApp(App).use(Varlet).mount('#app');
+createApp(App).use(LitchiDesign).mount('#app');
 ```
 
 ### 目标
