@@ -3,16 +3,20 @@
 Vue3.2 + TypeScript + Vite2 + pnpm + Monorepo + Eslint + Jest + Prettier + GitHooks
 
 ## Install
-### 通过 npm 或 yarn 或 pnpm 安装
+### Install via npm or yarn or pnpm
 
 #### npm
+```
 npm i litchi-design -S
-
+```
 #### yarn
+```
 yarn add litchi-design
-
+```
 #### pnpm
+```
 pnpm add litchi-design 
+```
 
 ## Target
 
