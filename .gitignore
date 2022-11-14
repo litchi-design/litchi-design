@@ -26,3 +26,4 @@ umd
 *.sln
 *.sw?
 .env
+coverage
