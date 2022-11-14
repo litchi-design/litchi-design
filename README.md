@@ -2,6 +2,18 @@
 
 Vue3.2 + TypeScript + Vite2 + pnpm + Monorepo + Eslint + Jest + Prettier + GitHooks
 
+## Install
+### 通过 npm 或 yarn 或 pnpm 安装
+
+#### npm
+npm i litchi-design -S
+
+#### yarn
+yarn add litchi-design
+
+#### pnpm
+pnpm add litchi-design 
+
 ## Target
 
 Create a lightweight and reliable mobile UI component library with Material Design style based on Vue3.
