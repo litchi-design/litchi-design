@@ -12,6 +12,7 @@ dist
 dist-ssr
 *.local
 .history
+coverage
 es
 lib
 umd
@@ -26,4 +27,4 @@ umd
 *.sln
 *.sw?
 .env
-coverage
+
