@@ -2,22 +2,29 @@
 
 Vue3.2 + TypeScript + Vite2 + pnpm + Monorepo + Eslint + Jest + Prettier + GitHooks
 
-## Install
-### Install via npm or yarn or pnpm
+## Installation
 
-#### npm
-```
+### Webpack / Vite
+
+```shell
+# Install via npm or yarn or pnpm
+
+# npm
 npm i litchi-design -S
-```
-#### yarn
-```
-yarn add litchi-design
-```
-#### pnpm
-```
-pnpm add litchi-design 
-```
 
+# yarn
+yarn add litchi-design
+
+# pnpm
+pnpm add litchi-design
+```
+```
+import App from './App.vue';
+import LitchiDesign from 'litchi-design';
+import { createApp } from 'vue';
+
+createApp(App).use(LitchiDesign).mount('#app');
+```
 ## Target
 
 Create a lightweight and reliable mobile UI component library with Material Design style based on Vue3.
