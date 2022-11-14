@@ -1,6 +1,6 @@
 ## Technology involved
 
-Vue3.2 + TypeScript + Vite2 + pnpm + Monorepo + Eslint + karma + Mocha + chai + Eslint + Prettier + GitHooks
+Vue3.2 + TypeScript + Vite2 + pnpm + Monorepo + Eslint + Jest + Prettier + GitHooks
 
 ## Target
 
