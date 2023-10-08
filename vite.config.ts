@@ -7,7 +7,7 @@ export default defineConfig({
   build: {
     target: 'modules',
     // 打包文件目录
-    outDir: 'es',
+    outDir: 'dist',
     // 压缩
     minify: false,
     //css分离
@@ -16,7 +16,7 @@ export default defineConfig({
     rollupOptions: {
       // 确保外部化处理那些你不想打包进库的依赖
       external: ['vue', /\.less/, '@litchi-design/utils', 'play'],
-      input: ['src/packages/index.ts'],
+      input: ['packages/index.ts'],
       output: [
         {
           format: 'es',
@@ -25,8 +25,8 @@ export default defineConfig({
           //让打包目录和我们目录对应
           preserveModules: true,
           //配置打包根目录
-          dir: 'es',
-          preserveModulesRoot: 'src/packages',
+          dir: 'dist/es',
+          preserveModulesRoot: 'packages',
         },
         {
           format: 'cjs',
@@ -34,8 +34,8 @@ export default defineConfig({
           //让打包目录和我们目录对应
           preserveModules: true,
           //配置打包根目录
-          dir: 'lib',
-          preserveModulesRoot: 'src/packages',
+          dir: 'dist/lib',
+          preserveModulesRoot: 'packages',
         },
         {
           format: 'umd',
@@ -43,8 +43,8 @@ export default defineConfig({
           //让打包目录和我们目录对应
           preserveModules: false,
           //配置打包根目录
-          dir: 'umd',
-          preserveModulesRoot: 'src/packages',
+          dir: 'dist/umd',
+          preserveModulesRoot: 'packages',
           globals: {
             vue: 'Vue',
           },
@@ -74,7 +74,7 @@ export default defineConfig({
     }),
     //因为这个插件默认打包到es下，我们想让lib目录下也生成声明文件需要再配置一个
     dts({
-      outputDir: 'lib',
+      outputDir: 'dist/lib',
       tsConfigFilePath: './tsconfig.json',
     }),
   ],

@@ -2,10 +2,11 @@
   "name": "litchi-design",
   "version": "1.0.1",
   "description": "",
-  "main": "lib/index.js",
-  "module": "es/index.js",
+  "main": "dist/lib/index.js",
+  "module": "dist/es/index.js",
   "scripts": {
     "dev": "pnpm -C docs dev",
+    "start": "pnpm -C play dev",
     "prepare": "husky install",
     "test": "cross-env NODE_ENV=test jest --coverage",
     "docs:dev": "pnpm -C docs dev",
@@ -26,13 +27,11 @@
     "access": "public"
   },
   "files": [
-    "es",
-    "lib",
-    "umd"
+    "dist"
   ],
   "author": "杉菜酱子",
   "license": "ISC",
-  "typings": "./lib/index.d.ts",
+  "typings": "./dist/lib/index.d.ts",
   "dependencies": {
     "@litchi-design/components": "workspace:^3.0.0",
     "@litchi-design/theme-chalk": "workspace:^3.0.0",
